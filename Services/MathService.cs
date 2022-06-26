@@ -14,9 +14,8 @@ namespace Console_EchoBot.Services
             int left = 0,
                 right = 0;
             double result = 0;
-
             var operands = expression.Split(_mathOperators, StringSplitOptions.RemoveEmptyEntries);
-            var operators = expression.Split(operands, StringSplitOptions.RemoveEmptyEntries);
+            var operators = expression.Where(o=> !char.IsDigit(o)).ToArray();
             MathExpDTo mathExp;
 
             try
@@ -26,23 +25,23 @@ namespace Console_EchoBot.Services
                 right = int.Parse(operands[1]);
                 switch (operators.Last())
                 {
-                    case "+":
+                    case '+':
                         result = left + right;
                         break;
-                    case "-":
+                    case '-':
                         result = left - right;
                         break;
-                    case "*":
+                    case '*':
                         result = left * right;
                         break;
-                    case "/":
+                    case '/':
                         if(right == 0)
                         {
                             throw new DivideByZeroException();
                         }
                         result = (double)left / right;
                         break;
-                    case "%":
+                    case '%':
                         if (right == 0)
                         {
                             throw new DivideByZeroException();

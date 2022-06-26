@@ -9,7 +9,7 @@ namespace Console_EchoBot.DTOs
         public int Left,
                    Right;
         public double Result;
-        public string Op;
+        public char Op;
         public bool IsValid;
         public string Error;
 
