@@ -3,7 +3,6 @@
 
 using Console_EchoBot.Services;
 using System;
-using System.Data;
 
 namespace Console_EchoBot
 {

@@ -2,10 +2,8 @@
 // Licensed under the MIT License.
 
 using System;
-using System.Data;
 using System.Threading;
 using System.Threading.Tasks;
-using Console_EchoBot.Services;
 using Console_EchoBot.Services.Interfaces;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
