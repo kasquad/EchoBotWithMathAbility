@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\rodme\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\rodme\\AppData\\Roaming\\NuGet\\.packages"
+    ]
+  }
+}
